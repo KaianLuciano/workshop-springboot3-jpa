@@ -6,18 +6,8 @@
 
 Workshop é uma aplicação Back-end feita durante o curso Java, ministrado pelo professor Nelio Alves.
 
-A aplicação consiste na produção de pedidos, aonde os dados são inseridos, atualizados, deletados sendo testada atraves do Postman.
-
-## Layout mobile
-![Mobile 1](https://github.com/acenelio/assets/raw/main/sds1/mobile1.png) ![Mobile 2](https://github.com/acenelio/assets/raw/main/sds1/mobile2.png)
-
-## Layout web
-![Web 1](https://github.com/acenelio/assets/raw/main/sds1/web1.png)
-
-![Web 2](https://github.com/acenelio/assets/raw/main/sds1/web2.png)
-
-## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+A aplicação consiste na produção de pedidos, aonde os dados inseridos são armazenados temporariamente no banco de dados de teste H2, podem ser feitas também
+a atualização de dados, deleção, procurar por todos (Usúarios, pedidos, itens do pedido, categoria etc.) e procurar por ID.
 
 # Tecnologias utilizadas
 ## Back end
@@ -25,42 +15,46 @@ A aplicação consiste na produção de pedidos, aonde os dados são inseridos, 
 - Spring Boot
 - JPA / Hibernate
 - Maven
+- H2
+- Postman
+
+## Layout da Aplicação
+![Aplicação](https://github.com/KaianLuciano/assets/blob/main/Estrutura.png)
+
+## Banco de Dados
+![H2](https://github.com/KaianLuciano/assets/blob/main/H2main.png)
+
+## Postman (Associações funcionando)
+São feitas no Postman, os testes de associações, exceções personalizadas etc.
+
+![Postman](https://github.com/KaianLuciano/assets/blob/main/Associação.png)
+
+## Modelo conceitual
+![Modelo Conceitual](https://github.com/KaianLuciano/assets/blob/main/UML.png)
 
 # Como executar o projeto
 
-## Back end
-Pré-requisitos: Java 11
+Pré-requisitos: Java 17, SQL, STS - Eclipse
 
-```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+## 1) Clonar Repositório
+git clone https://github.com/KaianLuciano/workshop-springboot3-jpa
 
-# entrar na pasta do projeto back end
-cd backend
+## 2) Abrir o projeto no Spring Tools
 
-# executar o projeto
-./mvnw spring-boot:run
-```
+## 3) Executar a aplicação conforme as instruções abaixo.
+![PassoApasso](https://github.com/KaianLuciano/assets/blob/main/PassoApasso.png)
 
-## Front end web
-Pré-requisitos: npm / yarn
+## 4) Escreva (localhost:8080/h2-console) no navegador, logo em seguida aperte Connect.
+![LocalHost](https://github.com/KaianLuciano/assets/blob/main/LocalHost.png)
 
-```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+# Como testar associações, exceções etc no Postman.
+## Basta colocar localhost:8080/order/{id desejado} na barra de pesquisa conforme a imagem;
+Obs: Para testar exceções basta digitar um ID inexistente.
 
-# entrar na pasta do projeto front end web
-cd front-web
-
-# instalar dependências
-yarn install
-
-# executar o projeto
-yarn start
-```
+![PostmanTest](https://github.com/KaianLuciano/assets/blob/main/PostmanTest.png)
 
 # Autor
 
-Wellington Mazoni de Andrade
+Kaian Luciano Alves Dos Santos
 
-https://www.linkedin.com/in/wmazoni
+https://www.linkedin.com/in/kaian-luciano-92a5b9227/
