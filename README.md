@@ -10,7 +10,6 @@ A aplicação consiste na produção de pedidos, aonde os dados inseridos são a
 a atualização de dados, deleção, procurar por todos (Usúarios, pedidos, itens do pedido, categoria etc.) e procurar por ID.
 
 # Tecnologias utilizadas
-## Back end
 - Java
 - Spring Boot
 - JPA / Hibernate
@@ -34,7 +33,7 @@ São feitas no Postman, os testes de associações, exceções personalizadas et
 
 # Como executar o projeto
 
-Pré-requisitos: Java 17, SQL, STS - Eclipse
+Pré-requisitos: Java 17, SQL, STS(SpringToolsSuite) - Eclipse, Git.
 
 ## 1) Clonar Repositório
 git clone https://github.com/KaianLuciano/workshop-springboot3-jpa
