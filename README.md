@@ -4,7 +4,7 @@
 
 # Sobre o projeto
 
-Workshop é uma aplicação Back-end feita durante o curso Java, ministrado pelo professor Nelio Alves.
+Workshop é um WorkShop feito com o intuito de consolidar meus conhecimentos.
 
 A aplicação consiste na produção de pedidos, aonde os dados inseridos são armazenados temporariamente no banco de dados de teste H2, podem ser feitas também
 a atualização de dados, deleção, procurar por todos (Usúarios, pedidos, itens do pedido, categoria etc.) e procurar por ID.
